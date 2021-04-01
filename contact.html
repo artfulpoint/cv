@@ -3,14 +3,36 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Me </title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-  <p> <a href="tel:+918447091721">phone</a></p>
-  <p>E-mail - rohittgrover@gmail.com</p>
-  <form class="" action="index.html" method="post">
-    <label>Your Name:</label>
-    <input type="text" name="" value="">
-    <input type="submit" name="">
-  </form>
+    <!-- <address>-->
+    <a href="tel:+918447091721">phone</a>
+    <a href="mailto:rohittgrover@gmail.com">mail</a>
+    <!--</address>-->
+    <p> <a href="tel:+918447091721">phone</a></p>
+    <p>E-mail - rohittgrover@gmail.com</p>
+    <form class="" action="index.html" method="post">
+      <label>Your Name:</label>
+      <input type="text" name="" value="">
+      <input type="submit" name="">
+    </form>
+    <map name="links">
+      <area shape="circle" coords="150,150,150" href="https://artisticodetalker.github.io/cv" alt="">
+    </map>
+    <img usemap="#links" src="images/Rohit.jpg" alt="" height="300" width="300">
+    <div class="user">
+
+      <div class="avatar">
+
+        <slot name="avatar"></slot>
+
+      </div>
+
+      <slot name="nickname"></slot>
+
+      <slot name="fullname"></slot>
+
+    </div>
   </body>
 </html>
